@@ -19,7 +19,90 @@
         </section>
 
         <!-- survey form -->
-        <form action="" id="survey-form"></form>
+        <form action="" id="survey-form">
+            <div id="form-group">
+                <label for="name" id="name-label">Nama</label>
+                <input type="text" name="name" id="name" placeholder="masukan nama anda" required>
+            </div>
+            <div id="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="masukan email anda" required>
+            </div>
+            <div id="form-group">
+                <label for="number" id="number-label">Umur</label>
+                <input type="number" name="number" min="10" max="99" id="number" placeholder="masukan umur anda" required>
+            </div>
+            <div id="form-group">
+                <p id="question-form">Apakah anda mengenal Joe Taslim sebelumnya?</p>
+                <p id="desc-form">(jika Ya lanjutkan pertanyaan dibawah)</p>
+                <div id="cek">
+                    <input type="radio" name="pilihan" id="pilihan" value="Ya">
+                    <label for="pilihan1">Ya</label>
+                </div>
+                <div id="cek">
+                    <input type="radio" name="pilihan" id="pilihan" value="Tidak">
+                    <label for="pilihan2">Tidak</label>
+                </div>
+            </div>
+            <div id="form-group">
+                <p id="question-form">Pendapat pribadi anda tentang Joe Taslim?</p>
+                <select name="select" id="dropdown">
+                    <option disabled selected>pilih pendapat anda :</option>
+                    <option value="Keren">Keren</option>
+                    <option value="Menginspirasi">Menginspirasi</option>
+                    <option value="Biasa Saja">Biasa Saja</option>
+                </select>
+            </div>
+            <div id="form-group">
+                <p id="question-form">List film terkenal dari Joe Taslim :</p>
+                <p id="desc-form">(cek jika sudah pernah ditonton)</p>
+                <div id="cek">
+                    <input type="checkbox" name="film1" id="film1" value="Mortal Kombat (2021)">
+                    <label for="film1">Mortal Kombat (2021)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film2" id="film2" value="The Swordsman (2020)">
+                    <label for="film2">The Swordsman (2020)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film3" id="film3" value="Hit & Run (2019)">
+                    <label for="film3">Hit & Run (2019)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film4" id="film4" value="The Night Comes for Us (2018)">
+                    <label for="film4">The Night Comes for Us (2018)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film5" id="film5" value="Surat Kecil Untuk Tuhan (2017)">
+                    <label for="film5">Surat Kecil Untuk Tuhan (2017)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film6" id="film6" value="Star Trek Beyond (2016)">
+                    <label for="film6">Star Trek Beyond (2016)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film7" id="film7" value="La Tahzan (2013)">
+                    <label for="film7">La Tahzan (2013)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film8" id="film8" value="Fast & Furious 6 (2013)">
+                    <label for="film8">Fast & Furious 6 (2013)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film9" id="film9" value="Dead Mine (2012)">
+                    <label for="film9">Dead Mine (2012)</label>
+                </div>
+                <div id="cek">
+                    <input type="checkbox" name="film10" id="film10" value="The Raid (2011)">
+                    <label for="film10">The Raid (2011)</label>
+                </div>
+            </div>
+            <div id="form-group">
+                <p id="question-form">Tanggapan dan Saran :</p>
+                <textarea name="massage" id="massage" cols="30" rows="5" placeholder="masukan pesan anda...."></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
